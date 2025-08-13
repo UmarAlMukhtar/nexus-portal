@@ -89,6 +89,13 @@ const clubs = [
     color: "from-emerald-400 to-green-500",
   },
   {
+    name: "VisionX",
+    logo: "/visionx.png",
+    description: "AI community",
+    whatsapp: "https://whatsapp.com/channel/0029VbA2NniGOj9oCljeWx09",
+    color: "from-purple-400 to-pink-500",
+  },
+  {
     name: "KBA",
     logo: "/kba.png",
     description: "Kerala Blockchain Academy",

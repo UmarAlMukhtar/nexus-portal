@@ -22,7 +22,7 @@ const clubs = [
     name: "MLSA",
     logo: "/mlsa.png",
     description: "Microsoft Learn Student Ambassadors",
-    whatsapp: "https://chat.whatsapp.com/DesignClubLink",
+    whatsapp: "https://chat.whatsapp.com/JBl5msayLorDmnBIPJsg3p?mode=ac_t",
     color: "from-green-500 to-teal-600",
   },
   {
@@ -36,20 +36,20 @@ const clubs = [
     name: "FOSS",
     logo: "/foss.png",
     description: "Free & Open Source Software",
-    whatsapp: "https://chat.whatsapp.com/TinkerhubLink",
+    whatsapp: "https://chat.whatsapp.com/G4FoRcmDWRjGR5DQ9XJ8A3",
     color: "from-orange-500 to-red-600",
   },
   {
     name: "OpenMind",
     logo: "/vercel.svg",
-    description: "Psychology & Mental Health",
-    whatsapp: "https://chat.whatsapp.com/DesignClubLink",
+    description: "Community",
+    whatsapp: "https://chat.whatsapp.com/G4FoRcmDWRjGR5DQ9XJ8A3",
     color: "from-indigo-500 to-purple-600",
   },
   {
     name: "Coders",
     logo: "/coders.png",
-    description: "Programming & Development",
+    description: "Code.Create.Conquer",
     whatsapp: "https://whatsapp.com/channel/0029Vb7oTNQFHWpzlsoZlI33",
     color: "from-cyan-500 to-blue-600",
   },
@@ -57,7 +57,7 @@ const clubs = [
     name: "YIP",
     logo: "/yip.png",
     description: "Young Innovators Program",
-    whatsapp: "https://chat.whatsapp.com/TinkerhubLink",
+    whatsapp: "https://whatsapp.com/channel/0029Vb6YysII1rcmiKLM7D1O",
     color: "from-yellow-500 to-orange-600",
   },
   {
@@ -78,7 +78,7 @@ const clubs = [
     name: "Space",
     logo: "/space.png",
     description: "Space Technology & Astronomy",
-    whatsapp: "https://chat.whatsapp.com/TinkerhubLink",
+    whatsapp: "https://whatsapp.com/channel/0029VbBz24R6rsQulSLrpL1F",
     color: "from-violet-500 to-purple-600",
   },
   {
@@ -106,7 +106,7 @@ const clubs = [
     name: "WTM",
     logo: "/wtm.png",
     description: "Women Techmakers",
-    whatsapp: "https://chat.whatsapp.com/SportsClubLink",
+    whatsapp: "https://whatsapp.com/channel/0029Vb6KgXlCHDyihhkqlZ04",
     color: "from-blue-500 to-indigo-600",
   },
   {
@@ -155,22 +155,8 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
-      {/* Enhanced Background Effects */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Animated gradient orbs */}
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-r from-purple-500/25 to-pink-500/25 rounded-full blur-3xl animate-pulse delay-500"></div>
-
-        {/* Floating particles */}
-        <div className="absolute top-20 left-20 w-2 h-2 bg-white/20 rounded-full animate-ping"></div>
-        <div className="absolute top-40 right-40 w-1 h-1 bg-blue-400/40 rounded-full animate-ping delay-700"></div>
-        <div className="absolute bottom-32 left-32 w-1.5 h-1.5 bg-purple-400/30 rounded-full animate-ping delay-300"></div>
-
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
-      </div>
+    <div className="min-h-screen bg-gray-900 relative overflow-hidden">
+      {/* Remove animated background for focus */}
 
       <div className="relative z-10 flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 min-h-screen">
         {/* Enhanced Header */}
@@ -220,13 +206,14 @@ export default function Home() {
                 onClick={() => handleCardClick(idx, club.whatsapp)}
               >
                 {/* Enhanced Front Side */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-white/5 to-transparent backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 flex flex-col items-center justify-center p-6 backface-hidden hover:border-white/40 transition-all duration-500">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl shadow-2xl border border-gray-700 flex flex-col items-center justify-center p-6 backface-hidden hover:border-white/40 transition-all duration-500">
                   {/* Enhanced Logo */}
                   <div className="relative mb-6">
                     <div
-                      className={`absolute inset-0 bg-gradient-to-r ${club.color} rounded-full blur-xl opacity-40 scale-125 animate-pulse`}
+                      className={`absolute inset-0 bg-gradient-to-r ${club.color} rounded-full blur-xl opacity-60 scale-125 animate-pulse group-hover:opacity-90 group-hover:scale-150`}
+                      style={{ boxShadow: "0 0 32px 8px rgba(0,0,0,0.5)" }}
                     ></div>
-                    <div className="relative bg-white/20 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-white/30">
+                    <div className="relative bg-gray-900 rounded-2xl p-4 shadow-2xl border border-gray-700">
                       <Image
                         src={club.logo}
                         alt={`${club.name} logo`}
@@ -241,13 +228,14 @@ export default function Home() {
                   <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-center text-white tracking-tight">
                     {club.name}
                   </h3>
-                  <p className="text-gray-300 text-center mb-8 leading-relaxed text-sm">
+                  <p className="text-gray-400 text-center mb-8 leading-relaxed text-sm">
                     {club.description}
                   </p>
 
                   {/* Enhanced Action Indicator */}
                   <div
-                    className={`flex items-center gap-2 bg-gradient-to-r ${club.color} text-white font-semibold text-sm px-4 py-2 rounded-xl shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105`}
+                    className={`flex items-center gap-2 bg-gradient-to-r ${club.color} text-white font-semibold text-sm px-4 py-2 rounded-xl shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110 group-hover:ring-4 group-hover:ring-white/40`}
+                    style={{ boxShadow: "0 0 16px 4px rgba(0,0,0,0.4)" }}
                   >
                     <Smartphone size={16} />
                     <span>{isMobile ? "Tap to Join" : "Hover to Join"}</span>
@@ -260,10 +248,13 @@ export default function Home() {
 
                 {/* Enhanced Back Side (Desktop Only) */}
                 {!isMobile && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/30 flex flex-col items-center justify-center p-6 rotate-y-180 backface-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl shadow-2xl border border-gray-700 flex flex-col items-center justify-center p-6 rotate-y-180 backface-hidden">
                     {/* Logo */}
                     <div className="mb-4">
-                      <div className="bg-white/20 backdrop-blur-sm rounded-xl p-3 border border-white/30">
+                      <div
+                        className="bg-gray-900 rounded-xl p-3 border border-gray-700 shadow-lg"
+                        style={{ boxShadow: "0 0 24px 6px rgba(0,0,0,0.5)" }}
+                      >
                         <Image
                           src={club.logo}
                           alt={`${club.name} logo`}
@@ -279,7 +270,10 @@ export default function Home() {
                     </h3>
 
                     {/* Enhanced QR Code */}
-                    <div className="bg-white p-4 rounded-2xl mb-6 shadow-2xl border-4 border-white/20 backdrop-blur-sm">
+                    <div
+                      className="bg-white p-4 mb-6 shadow-2xl border-4 border-gray-200 flex items-center justify-center"
+                      style={{ boxShadow: "0 0 32px 8px rgba(0,0,0,0.07)" }}
+                    >
                       <Image
                         src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(
                           club.whatsapp
@@ -287,7 +281,7 @@ export default function Home() {
                         alt="WhatsApp QR Code"
                         width={120}
                         height={120}
-                        className="rounded-xl"
+                        className=""
                         unoptimized
                       />
                     </div>
@@ -297,7 +291,8 @@ export default function Home() {
                       href={club.whatsapp}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-gradient-to-r from-green-500 via-green-600 to-green-700 text-white px-8 py-4 rounded-2xl hover:from-green-600 hover:via-green-700 hover:to-green-800 font-bold shadow-2xl hover:shadow-green-500/50 transition-all duration-300 text-center flex items-center gap-3 group transform hover:scale-110"
+                      className="bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white px-8 py-4 rounded-2xl font-bold shadow-2xl transition-all duration-300 text-center flex items-center gap-3 group transform hover:scale-110 hover:ring-4 hover:ring-green-400/40"
+                      style={{ boxShadow: "0 0 32px 8px rgba(0,255,100,0.3)" }}
                       onClick={(e) => e.stopPropagation()}
                     >
                       <Smartphone size={18} />

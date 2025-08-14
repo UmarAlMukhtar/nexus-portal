@@ -22,7 +22,7 @@ const clubs = [
     name: "MLSA",
     logo: "/mlsa.png",
     description: "Microsoft Learn Student Ambassadors",
-    whatsapp: "https://chat.whatsapp.com/JBl5msayLorDmnBIPJsg3p?mode=ac_t",
+    whatsapp: "https://whatsapp.com/channel/0029VbBIzta5K3zSa2u5M244",
     color: "from-green-400 to-teal-500",
   },
   {
